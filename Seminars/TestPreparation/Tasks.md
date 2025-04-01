@@ -88,30 +88,7 @@
 
 ---
 
-### 6. Предикати и функционални обекти
 
-**Задача:** Реализирайте клас `BankAccount`, представящ банков акаунт.
-
-**Полета:**
-
-- `owner` (собственик) - символен низ с до 30 символа (char\*)
-- `balance` (баланс) - положително число
-
-**Методи:**
-
-- `deposit(double amount)`: внасяне на сума
-- `withdraw(double amount)`: теглене на сума, ако балансът позволява
-- `filterAccounts(BankAccount* accounts, int size, bool (*predicate)(BankAccount))`: връща нов масив от акаунти, които удовлетворяват предиката
-
-**Примерен предикат:**
-
-```cpp
-bool hasHighBalance(BankAccount acc) {
-    return acc.getBalance() > 10000;
-}
-```
-
----
 
 ### 7. Допълнителна задача с голямата четворка
 
